@@ -188,3 +188,4 @@ document.addEventListener("DOMContentLoaded", () => {
   goToSlide(0);
   startAutoplay();
 });
+
