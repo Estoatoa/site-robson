@@ -550,7 +550,7 @@ button {
 }
 
 .project-hero {
-  padding: 150px 34px 60px;
+  padding: 80px 34px 60px;
   display: grid;
   grid-template-columns: 1fr;
   gap: 28px;
@@ -1493,10 +1493,6 @@ button {
   margin-top: 24px;
 }
 
-/* evita conflito com resto da página */
-.project-hero {
-  display: none;
-}
 
 @media (max-width: 640px) {
   .project-hero-banner {
