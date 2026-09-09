@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Robson Dias — Director / Editor / Cinematographer</title>
-  <meta name="description" content="Portfólio cinematográfico de Robson Dias com projetos, vídeos e páginas detalhadas dos trabalhos." />
+  <title data-i18n-key="meta.title">Robson Dias — Director / Editor / Cinematographer</title>
+  <meta name="description" content="Portfólio cinematográfico de Robson Dias com projetos, vídeos e páginas detalhadas dos trabalhos." data-i18n-attr="content:meta.description" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;family=Cormorant+Garamond:wght@500;600;700&amp;display=swap" rel="stylesheet" />
@@ -61,11 +61,11 @@ international co-productions.
       </div>
 
       <div class="hero-bottom">
-        <div class="scroll-note">SCROLL TO EXPLORE</div>
+        <div class="scroll-note" data-i18n-key="hero.scroll">SCROLL TO EXPLORE</div>
 
         <div class="ticker">
           <div class="ticker-track">
-            <a href="projects/manto.html">I Heard the Calling</a>
+            <a href="projects/manto.html" data-i18n-key="manto.shortTitle">I Heard the Calling</a>
             <a href="projects/favela-turistica.html">Favela Turística</a>
             <a href="projects/4800.html">4800</a>
             <a href="projects/bien-entendu.html">Bien Entendu</a>
@@ -74,7 +74,7 @@ international co-productions.
             <a href="projects/barrinha.html">Barrinha</a>
 
 
-            <a href="projects/manto.html">I Heard the Calling</a>
+            <a href="projects/manto.html" data-i18n-key="manto.shortTitle">I Heard the Calling</a>
             <a href="projects/favela-turistica.html">Favela Turística</a>
             <a href="projects/4800.html">4800</a>
             <a href="projects/bien-entendu.html">Bien Entendu</a>
@@ -195,8 +195,9 @@ international co-productions.
       </article>
 
       <div class="project-trajectory reveal">
+        <div class="timeline-navigation" role="tablist" aria-label="Project trajectory"></div>
         <ol class="trajectory-list" aria-label="Project trajectory">
-          <li class="timeline-event" tabindex="0">
+          <li class="timeline-event is-active" tabindex="0">
             <span class="timeline-year">2023</span>
             <div class="timeline-content">
               <img class="timeline-logo timeline-logo--cannes" src="assets/manto/logos/cannes-docs.png" alt="Cannes Docs" loading="lazy" decoding="async" />
@@ -281,67 +282,66 @@ international co-productions.
     </section>
 
     <section id="works" class="works section">
-            <section class="media-carousel-section">
+            <section class="media-catalog-section">
         <div class="section-head">
           <p class="section-kicker" data-i18n-key="works.kicker">Visual highlights</p>
           <h2 data-i18n-key="works.title">Projects in development and circulation</h2>
         </div>
 
-        <div class="media-carousel">
-          <div class="media-track">
-           <a href="projects/barrinha.html" class="media-item">
-              <video muted autoplay loop playsinline preload="none" data-lazy-video>
-                <source data-src="assets/barrinha/pre-teaser Barrinha - Dias Robson (1080p, h264, youtube).mp4" type="video/mp4" />
-              </video>
-            </a>
-
-            <a href="projects/manto.html" class="media-item">
+        <div class="media-catalog">
+          <article class="media-catalog-card media-catalog-card--featured">
+            <a href="projects/manto.html" class="catalog-media">
               <video muted autoplay loop playsinline preload="none" data-lazy-video>
                 <source data-src="assets/manto/manto-preview.mp4" type="video/mp4" />
               </video>
             </a>
-
-
-              <a href="projects/favela-turistica.html" class="media-item">
+            <div class="catalog-copy"><span class="catalog-index">01</span><p data-i18n-key="catalog.manto.meta">2027 · Work in progress</p><h3 data-i18n-key="manto.shortTitle">I Heard the Calling</h3><small data-i18n-key="catalog.manto.role">Direction / Screenplay</small></div>
+          </article>
+          <article class="media-catalog-card">
+            <a href="projects/favela-turistica.html" class="catalog-media">
               <video muted autoplay loop playsinline preload="none" data-lazy-video>
                 <source data-src="assets/favela/favela Turistica teaser  legenda Português e ingles - Dias Robson (1080p, h264, youtube).mp4" type="video/mp4" />
               </video>
             </a>
-            <a href="projects/manto.html" class="media-item">
-              <video muted autoplay loop playsinline preload="none" data-lazy-video>
-                <source data-src="assets/manto/10SEG_Chegada no museu em florença_V4.mp4" type="video/mp4" />
-              </video>
+            <div class="catalog-copy"><span class="catalog-index">02</span><p data-i18n-key="catalog.favela.meta">2024 · Short documentary</p><h3>Favela Turística</h3><small data-i18n-key="catalog.favela.role">Direction</small></div>
+          </article>
+          <article class="media-catalog-card">
+            <a href="projects/huella.html" class="catalog-media">
+              <img src="assets/huella/huella-1.png" alt="HUELLA" loading="lazy" decoding="async" />
             </a>
-
-            <a href="projects/bien-entendu.html" class="media-item">
+            <div class="catalog-copy"><span class="catalog-index">03</span><p data-i18n-key="catalog.huella.meta">Short documentary · France / Peru</p><h3>HUELLA</h3><small data-i18n-key="catalog.huella.role">Cinematography</small></div>
+          </article>
+          <article class="media-catalog-card">
+            <a href="projects/4800.html" class="catalog-media">
+              <iframe src="https://www.youtube.com/embed/mDNu8TpqqRw?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=mDNu8TpqqRw&amp;controls=0&amp;playsinline=1&amp;rel=0&amp;modestbranding=1" title="4800 short preview" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture" tabindex="-1"></iframe>
+            </a>
+            <div class="catalog-copy"><span class="catalog-index">04</span><p data-i18n-key="catalog.4800.meta">2019 · Short documentary · France</p><h3>4800</h3><small data-i18n-key="catalog.4800.role">Direction</small></div>
+          </article>
+          <article class="media-catalog-card">
+            <a href="projects/bien-entendu.html" class="catalog-media">
               <img src="assets/bien-entendu/bien_entendu-1.jpg" alt="Bien entendu" loading="lazy" decoding="async" />
             </a>
-
-            <a href="projects/favela-turistica.html" class="media-item">
-              <img src="assets/favela/favela-poster.png" alt="favela" loading="lazy" decoding="async" />
+            <div class="catalog-copy"><span class="catalog-index">05</span><p data-i18n-key="catalog.bien.meta">Short documentary · France</p><h3>Bien entendu</h3><small data-i18n-key="catalog.bien.role">Direction</small></div>
+          </article>
+          <article class="media-catalog-card">
+            <a href="projects/les-voix.html" class="catalog-media">
+              <img src="assets/les-voix/les-voix-3.png" alt="Les Voix du dedans" loading="lazy" decoding="async" />
             </a>
-
-            <a href="projects/huella.html" class="media-item">
-              <img src="assets/huella/huella-1.png" alt="huella" loading="lazy" decoding="async" />
+            <div class="catalog-copy"><span class="catalog-index">06</span><p data-i18n-key="catalog.voix.meta">Short documentary · France</p><h3>Les Voix du dedans</h3><small data-i18n-key="catalog.voix.role">Cinematography</small></div>
+          </article>
+          <article class="media-catalog-card">
+            <a href="#current-series" class="catalog-media">
+              <iframe src="https://www.youtube.com/embed/HmiOzAZCFnA?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=HmiOzAZCFnA&amp;controls=0&amp;playsinline=1&amp;rel=0&amp;modestbranding=1" title="Onze vrouw in Rio short preview" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture" tabindex="-1"></iframe>
             </a>
-
-            <a href="projects/kabadio.html" class="media-item">
+            <div class="catalog-copy"><span class="catalog-index">07</span><p data-i18n-key="catalog.onze.meta">2026 · Documentary series</p><h3><em>Onze vrouw in Rio</em></h3><small data-i18n-key="catalog.onze.role">Research</small></div>
+          </article>
+          <article class="media-catalog-card">
+            <a href="projects/kabadio.html" class="catalog-media">
               <img src="assets/Kabadio/kabadio-1.jpg" alt="KABADIO" loading="lazy" decoding="async" />
             </a>
-
-            <a href="projects/les-voix.html" class="media-item">
-              <img src="assets/les-voix/les-voix-3.png" alt="les voix du dedant " loading="lazy" decoding="async" />
-            </a>
-
-            <a href="projects/manto.html" class="media-item">
-              <video muted autoplay loop playsinline preload="none" data-lazy-video>
-                <source data-src="assets/manto/Docs-in-Progress.MP4" type="video/mp4" />
-              </video>
-            </a>
-
-
+            <div class="catalog-copy"><span class="catalog-index">08</span><p data-i18n-key="catalog.kabadio.meta">Feature documentary · Brazil / Senegal</p><h3>KABADIO</h3><small data-i18n-key="catalog.kabadio.role">Co-writing / Editing</small></div>
+          </article>
           </div>
-        </div>
       </section>
     </section>
 
@@ -391,14 +391,14 @@ Fluent across multiple cultural and professional contexts, Robson Dias develops 
       </div>
 
       <div class="recognition-compact-grid reveal">
-        <article class="recognition-compact-card">
+        <article class="recognition-compact-card recognition-compact-card--max">
           <img class="recognition-logo recognition-logo--award" src="assets/manto/logos/cannes-1.png" alt="2025 Docs-in-Progress Award Winners" loading="lazy" decoding="async" />
           <p class="recognition-topline"><span>Festival de Cannes</span><span>2025</span></p>
           <h3 data-i18n-key="recognitions.cannesTitle">Rulli Putortì &amp; Partners Award</h3>
           <p data-i18n-key="recognitions.cannesText">Rulli Putortì &amp; Partners Law Firm Award, presented at Cannes Docs' Doc Day.</p>
         </article>
         <article class="recognition-compact-card">
-          <img class="recognition-logo" src="assets/robson/logos/Logo max original.jpg" alt="MAX" loading="lazy" decoding="async" />
+          <img class="recognition-logo recognition-logo--max" src="assets/favela/logos/Max1.png" alt="HBO Max Originals" loading="lazy" decoding="async" />
           <p class="recognition-topline"><span>Warner Bros. Discovery</span><span>2024</span></p>
           <h3 data-i18n-key="recognitions.warnerTitle">Access Program / MAX</h3>
           <p data-i18n-key="recognitions.warnerText">Favela Turística was selected, released on MAX and broadcast across Latin America.</p>
@@ -433,8 +433,8 @@ Fluent across multiple cultural and professional contexts, Robson Dias develops 
 
     <section id="current-series" class="current-series section">
       <div class="section-head reveal">
-        <p class="section-kicker" data-i18n-key="currentSeries.kicker">New series / Research</p>
-        <h2 data-i18n-key="currentSeries.title">A new journey through Rio, coming to screen this September.</h2>
+        <p class="section-kicker" data-i18n-key="currentSeries.kicker">Just premiered / Research</p>
+        <h2 data-i18n-key="currentSeries.title">Just premiered: a journey through Rio.</h2>
       </div>
 
       <div class="current-series-grid reveal">
@@ -444,37 +444,18 @@ Fluent across multiple cultural and professional contexts, Robson Dias develops 
           <p data-i18n-key="currentSeries.text">Robson Dias participated as a researcher in this three-part VPRO series with journalist Nina Jurna, exploring the tensions, beauty and contradictions of Rio de Janeiro.</p>
           <p class="current-series-details" data-i18n-key="currentSeries.details">The series follows Jurna across the city, from favelas to affluent neighbourhoods, at a moment when questions of inequality, security and political division shape everyday life.</p>
           <div class="release-details" aria-label="Release details">
-            <p><span data-i18n-key="currentSeries.releaseLabel">Premiere</span><strong data-i18n-key="currentSeries.releaseDate">6 September 2026, 20:15</strong></p>
+            <p><span data-i18n-key="currentSeries.releaseLabel">Now available</span><strong data-i18n-key="currentSeries.releaseDate">Since 6 September 2026</strong></p>
             <p><span data-i18n-key="currentSeries.watchLabel">Watch</span><strong>NPO 2 / VPRO / NPO Start</strong></p>
             <p><span data-i18n-key="currentSeries.formatLabel">Format</span><strong data-i18n-key="currentSeries.format">Three-part documentary series</strong></p>
           </div>
+          <a class="btn btn-secondary" href="https://npo.nl/start/afspelen/onze-vrouw-in-rio" target="_blank" rel="noreferrer" data-i18n-key="currentSeries.cta">Watch on NPO Start</a>
         </div>
 
         <div class="series-video">
-          <video muted autoplay loop playsinline preload="metadata" aria-label="Onze vrouw in Rio trailer">
-            <source src="https://drive.google.com/uc?export=download&amp;id=1xLdg9oiOHKcbJF2NnClPJfLbo8ggZp37" type="video/mp4" />
-          </video>
+          <iframe src="https://www.youtube.com/embed/HmiOzAZCFnA?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=HmiOzAZCFnA&amp;controls=0&amp;playsinline=1&amp;rel=0&amp;modestbranding=1" title="Onze vrouw in Rio short preview" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture"></iframe>
         </div>
       </div>
     </section>
-
-    <section class="awards-strip">
-      <div class="awards-track">
-        <span>CANNES DOCS 2025</span>
-        <span>DOCS-IN-PROGRESS WINNER</span>
-        <span>BRAZIL / FRANCE</span>
-        <span>POST-PRODUCTION</span>
-        <span>GAP FINANCING</span>
-        <span>INTERNATIONAL CO-PRODUCERS</span>
-        <span>CANNES DOCS 2025</span>
-        <span>DOCS-IN-PROGRESS WINNER</span>
-        <span>BRAZIL / FRANCE</span>
-        <span>POST-PRODUCTION</span>
-        <span>GAP FINANCING</span>
-        <span>INTERNATIONAL CO-PRODUCERS</span>
-      </div>
-    </section>
-
 
     <section id="talks" class="talks-preview section">
   <div class="section-head reveal">
