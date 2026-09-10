@@ -1022,6 +1022,13 @@ button {
   object-fit: cover;
 }
 
+.project-video .video-box--portrait iframe {
+  position: relative;
+  left: -38.9%;
+  width: 177.8%;
+  max-width: none;
+}
+
 .project-layout {
   display: grid;
   grid-template-columns: .8fr 1.2fr;
@@ -1903,7 +1910,11 @@ button {
 }
 
 .media-catalog-section {
-  padding: 110px 34px;
+  padding: 64px 34px 82px;
+}
+
+.works.section {
+  padding: 64px 0 0;
 }
 
 .media-catalog {
@@ -1946,6 +1957,13 @@ button {
 
 .catalog-media iframe {
   pointer-events: none;
+}
+
+.catalog-media--portrait iframe {
+  position: relative;
+  left: -38.9%;
+  width: 177.8%;
+  max-width: none;
 }
 
 .media-catalog-card:hover .catalog-media img,
@@ -2001,40 +2019,48 @@ button {
 }
 
 .project-logo-ticker {
-  padding: 70px 34px;
-  overflow: hidden;
+  padding: 42px 34px 54px;
 }
 
-.project-logo-ticker .logo-ticker {
-  overflow: hidden;
+.project-logo-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0;
   margin-top: 26px;
   border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+}
+
+.project-logo-grid > div {
+  display: grid;
+  min-height: 92px;
+  place-items: center;
+  padding: 18px;
+  border-right: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
 }
 
-.project-logo-ticker .logo-ticker-track {
-  display: flex;
-  align-items: center;
-  gap: 42px;
-  width: max-content;
-  padding: 18px 0;
-  animation: logoScroll 32s linear infinite;
-}
-
-.project-logo-ticker .logo-ticker-track img {
-  width: 112px;
-  height: 44px;
+.project-logo-grid img {
+  width: min(100%, 126px);
+  height: 48px;
   object-fit: contain;
-  flex: 0 0 auto;
 }
 
 @media (max-width: 640px) {
   .project-logo-ticker {
-    padding: 54px 18px;
+    padding: 42px 18px;
   }
 
-  .project-logo-ticker .logo-ticker-track img {
-    width: 88px;
+  .project-logo-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .project-logo-grid > div {
+    min-height: 78px;
+    padding: 14px;
+  }
+
+  .project-logo-grid img {
     height: 38px;
   }
 }
