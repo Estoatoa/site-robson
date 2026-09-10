@@ -132,6 +132,7 @@ const translations = {
     "catalog.manto.role": "Direction / Screenplay",
     "catalog.favela.meta": "2024 · Short documentary",
     "catalog.favela.role": "Direction",
+    "catalog.favela.partner": "MAX / Warner Bros. Discovery",
     "catalog.huella.meta": "Short documentary · France / Peru",
     "catalog.huella.role": "Cinematography",
     "catalog.4800.meta": "2019 · Short documentary · France",
@@ -144,6 +145,8 @@ const translations = {
     "catalog.onze.role": "Research",
     "catalog.kabadio.meta": "Feature documentary · Brazil / Senegal",
     "catalog.kabadio.role": "Co-writing / Editing",
+    "catalog.grande.meta": "Web series · 9 episodes",
+    "catalog.grande.role": "Cinematography",
     "statement.kicker": "Direction / Editing / Cinematography",
     "statement.title": "Cinema shifts the point of view.",
     "about.kicker": "About",
@@ -265,6 +268,7 @@ const translations = {
     "catalog.manto.role": "Direção / Roteiro",
     "catalog.favela.meta": "2024 · Curta documental",
     "catalog.favela.role": "Direção",
+    "catalog.favela.partner": "MAX / Warner Bros. Discovery",
     "catalog.huella.meta": "Curta documental · França / Peru",
     "catalog.huella.role": "Direção de fotografia",
     "catalog.4800.meta": "2019 · Curta documental · França",
@@ -277,6 +281,8 @@ const translations = {
     "catalog.onze.role": "Pesquisa",
     "catalog.kabadio.meta": "Longa documental · Brasil / Senegal",
     "catalog.kabadio.role": "Corroteiro / Montagem",
+    "catalog.grande.meta": "Websérie · 9 episódios",
+    "catalog.grande.role": "Direção de fotografia",
     "statement.kicker": "Direção / Montagem / Fotografia",
     "statement.title": "O cinema desloca o ponto de vista.",
     "about.kicker": "Sobre",
@@ -398,6 +404,7 @@ const translations = {
     "catalog.manto.role": "Réalisation / Scénario",
     "catalog.favela.meta": "2024 · Court métrage documentaire",
     "catalog.favela.role": "Réalisation",
+    "catalog.favela.partner": "MAX / Warner Bros. Discovery",
     "catalog.huella.meta": "Court métrage documentaire · France / Pérou",
     "catalog.huella.role": "Image",
     "catalog.4800.meta": "2019 · Court métrage documentaire · France",
@@ -410,6 +417,8 @@ const translations = {
     "catalog.onze.role": "Recherche",
     "catalog.kabadio.meta": "Long métrage documentaire · Brésil / Sénégal",
     "catalog.kabadio.role": "Coécriture / Montage",
+    "catalog.grande.meta": "Série web · 9 épisodes",
+    "catalog.grande.role": "Image",
     "statement.kicker": "Réalisation / Montage / Image",
     "statement.title": "Le cinéma déplace le regard.",
     "about.kicker": "À propos",
@@ -772,6 +781,108 @@ const staticFrenchTranslations = {
   ,"collectif LFKs, Marseille — editing workshops": "collectif LFKs, Marseille — ateliers de montage"
 };
 
+const staticPortugueseTranslations = {
+  "A short documentary about tourism, representation, and the tensions between image, market, and territory in the favelas of Rio de Janeiro.": "Um curta documental sobre turismo, representação e as tensões entre imagem, mercado e território nas favelas do Rio de Janeiro.",
+  "Short documentary": "Curta documental",
+  "Watch on MAX": "Assistir na MAX",
+  "Project trajectory": "Percurso do projeto",
+  "Festivals, broadcasters and partners": "Festivais, difusores e parceiros",
+  "Status Completed": "<strong>Status</strong> Concluído",
+  "Format Short documentary": "<strong>Formato</strong> Curta documental",
+  "Role Director": "<strong>Função</strong> Direção",
+  "Country Brazil": "<strong>País</strong> Brasil",
+  "Year 2024": "<strong>Ano</strong> 2024",
+  "Director Robson Dias": "<strong>Direção</strong> Robson Dias",
+  "Cinematography Hugo Anikupulapo": "<strong>Direção de fotografia</strong> Hugo Anikupulapo",
+  "Platform MAX (Warner Bros. Discovery)": "<strong>Plataforma</strong> MAX (Warner Bros. Discovery)",
+  "Series Untold Black Narratives — Season 1, Episode 3": "<strong>Série</strong> Untold Black Narratives — Temporada 1, Episódio 3",
+  "Favela Turística offers a critical perspective on tourism in Rocinha, the largest favela in Rio de Janeiro and one of the most visited locations in the city. Through the voices of a tour guide, an activist and a cultural agitator — all residents of Rocinha — the film questions who truly benefits from this global curiosity.": "<em>Favela Turística</em> oferece uma perspectiva crítica sobre o turismo na Rocinha, a maior favela do Rio de Janeiro e um dos lugares mais visitados da cidade. Por meio das vozes de um guia turístico, de um ativista e de um agitador cultural, todos moradores da Rocinha, o filme questiona quem realmente se beneficia dessa curiosidade global.",
+  "As thousands of tourists circulate through narrow streets and everyday life becomes spectacle, the documentary shifts the focus toward those who are rarely heard: the residents themselves. How do they navigate constant exposure? What does it mean to be transformed into an attraction? Between economic opportunity and symbolic exploitation, the film reveals what remains unseen behind the “favela tour”.": "Enquanto milhares de turistas percorrem ruas estreitas e o cotidiano se torna espetáculo, o documentário desloca o foco para aqueles que raramente são ouvidos: os próprios moradores. Como eles lidam com a exposição constante? O que significa ser transformado em atração? Entre oportunidade econômica e exploração simbólica, o filme revela o que permanece invisível por trás do \"favela tour\".",
+  "Context": "Contexto",
+  "Part of the series Untold Black Narratives, this film engages directly with structural questions around representation, race and the global consumption of marginalized territories. By placing the camera in the hands of those who inhabit these spaces, the work confronts dominant narratives shaped by external gazes.": "Parte da série <em>Untold Black Narratives</em>, o filme se envolve diretamente com questões estruturais de representação, raça e consumo global de territórios marginalizados. Ao colocar a câmera nas mãos de quem habita esses espaços, a obra confronta narrativas dominantes moldadas por olhares externos.",
+  "The project examines tourism not as a neutral activity, but as a system embedded in power relations — where visibility, economy and inequality intersect. Within Robson Dias’ body of work, the film reinforces an ongoing investigation into image politics, territory and the tension between visibility and exploitation.": "O projeto examina o turismo não como uma atividade neutra, mas como um sistema inserido em relações de poder, onde visibilidade, economia e desigualdade se cruzam. Na filmografia de Robson Dias, o filme reforça uma investigação contínua sobre política da imagem, território e a tensão entre visibilidade e exploração.",
+  "Circulation": "Circulação",
+  "Favela Turística was produced within Warner Bros. Discovery’s Untold Black Narratives initiative and released on MAX across Latin America as Season 1, Episode 3.": "<em>Favela Turística</em> foi produzido no âmbito da iniciativa <em>Untold Black Narratives</em> da Warner Bros. Discovery e lançado na MAX em toda a América Latina como Temporada 1, Episódio 3.",
+  "The film has also circulated through independent and community-based screening contexts, including the Encontro de Cinema Negro Zózimo Bulbul, where it was presented in the section Raízes em Movimento at CineCarioca Penha, Rio de Janeiro.": "O filme também circulou em contextos independentes e comunitários de exibição, incluindo o Encontro de Cinema Negro Zózimo Bulbul, onde foi apresentado na seção <em>Raízes em Movimento</em>, no CineCarioca Penha, Rio de Janeiro.",
+  "In Europe, the film was screened at the Rencontres du Cinéma Brésilien at Cinéma L’Alhambra in Marseille, followed by a discussion with the filmmakers. These screenings extend the film’s dialogue beyond streaming, connecting its critique of favela tourism with audiences in Brazil and France.": "Na Europa, o filme foi exibido nas <em>Rencontres du Cinéma Brésilien</em>, no Cinéma L'Alhambra, em Marselha, seguido de uma conversa com os realizadores. Essas sessões estendem o diálogo do filme para além do streaming, conectando sua crítica ao turismo nas favelas com públicos do Brasil e da França.",
+  "Set in the coastal town of Cassis, the film follows the presence of Chriss, a poet whose words and rhythms inhabit the landscape of the Calanques. Emerging from a filmmaking residency, the project navigates between territory, language and perception, questioning how a place is observed, narrated and transformed through artistic encounter.": "Situado na cidade costeira de Cassis, o filme acompanha Chriss, poeta cujas palavras e ritmos habitam a paisagem das Calanques. Nascido de uma residência de criação cinematográfica, o projeto transita entre território, linguagem e percepção, questionando como um lugar é observado, narrado e transformado pelo encontro artístico.",
+  "Short documentary / France": "Curta documental / França",
+  "Status Completed": "<strong>Status</strong> Concluído",
+  "Runtime Short film": "<strong>Duração</strong> Curta-metragem",
+  "Country France": "<strong>País</strong> França",
+  "Context Master in Documentary Filmmaking": "<strong>Contexto</strong> Mestrado em Realização Documental",
+  "In Cassis, a film crew searches for a subject as part of an artistic residency. Their encounter with Chriss, a poet rooted in the territory, gradually shifts the direction of the film. What begins as a search becomes an immersion — where voice, landscape and presence intersect.": "Em Cassis, uma equipe de cinema procura um tema no contexto de uma residência artística. O encontro com Chriss, poeta enraizado no território, desloca gradualmente a direção do filme. O que começa como busca transforma-se em imersão, onde voz, paisagem e presença se cruzam.",
+  "The film was developed within the residency program “Les Calanques, territoire de sciences, source d’inspiration,” promoted by the Parc national des Calanques, the Camargo Foundation and Institut Pythéas. Conceived during the Master’s program in Documentary Filmmaking at Aix-Marseille Université, the project reflects a research-based approach to cinema, where fieldwork, encounter and territory shape the narrative form.": "O filme foi desenvolvido no programa de residência \"Les Calanques, territoire de sciences, source d’inspiration\", promovido pelo Parc national des Calanques, pela Camargo Foundation e pelo Institut Pythéas. Concebido durante o Mestrado em Realização Documental da Aix-Marseille Université, o projeto reflete uma abordagem de cinema baseada na pesquisa, em que trabalho de campo, encontro e território moldam a forma narrativa.",
+  "Approach": "Abordagem",
+  "The film operates at the boundary between observation and construction. Rather than imposing a predefined narrative, it allows the presence of the poet and the specificity of the location to guide the cinematic gesture. The landscape becomes both subject and structure, while language — spoken, performed, fragmented — opens a space between documentary and poetic form.": "O filme opera na fronteira entre observação e construção. Em vez de impor uma narrativa predefinida, deixa que a presença do poeta e a especificidade do lugar guiem o gesto cinematográfico. A paisagem se torna ao mesmo tempo assunto e estrutura, enquanto a linguagem, falada, performada ou fragmentada, abre um espaço entre documentário e forma poética.",
+  "Intent": "Intenção",
+  "4800 explores how a territory can be read, inhabited and reinterpreted through artistic practice. It questions the position of the filmmaker in relation to place and subject, revealing cinema not as a tool of capture, but as a process of negotiation, translation and presence.": "<em>4800</em> explora como um território pode ser lido, habitado e reinterpretado pela prática artística. Questiona a posição do cineasta em relação ao lugar e ao sujeito, revelando o cinema não como ferramenta de captura, mas como processo de negociação, tradução e presença.",
+  "Developed during Master Écritures Documentaires – Aix-Marseille Université": "Desenvolvido durante o Master Écritures Documentaires — Aix-Marseille Université",
+  "Created within the Calanques artistic residency program": "Criado no programa de residência artística das Calanques",
+  "In collaboration with Parc national des Calanques, Fondation Camargo and Institut Pythéas": "Em colaboração com Parc national des Calanques, Fondation Camargo e Institut Pythéas",
+  "Research-based documentary practice combining territory and artistic exploration": "Prática documental baseada em pesquisa, combinando território e exploração artística",
+  "This page presents Huella as a documentary shaped through artistic immersion in the Peruvian Amazon. It helps partners, programmers and collaborators quickly understand the film’s trajectory, its hybrid artistic approach, and its commitment to making visible Amazonian peoples, territories and struggles.": "Esta página apresenta <em>Huella</em> como um documentário moldado pela imersão artística na Amazônia peruana. Ela ajuda parceiros, programadores e colaboradores a compreender rapidamente o percurso do filme, sua abordagem artística híbrida e seu compromisso com a visibilização de povos, territórios e lutas amazônicas.",
+  "Short documentary / France-Peru": "Curta documental / França-Peru",
+  "Status Finalized": "<strong>Status</strong> Finalizado",
+  "Runtime Short": "<strong>Duração</strong> Curta-metragem",
+  "Countries France / Peru": "<strong>Países</strong> França / Peru",
+  "Production Buzios films / Morgane CIA": "<strong>Produção</strong> Búzios Films / Morgane CIA",
+  "Main focus Mémoire, héritage et résistance noire à Campos dos Goytacazes": "<strong>Foco central</strong> Povos, territórios e lutas amazônicas",
+  "The inspiration comes from Herzog’s quest in his “conquest of the useless,” both his own and that of his character Fitzcarraldo. The documentary Huella allows itself an unpretentious search for what was missing in the majestic landscapes of pure nature. A performance project conceived and developed by Justine Bertignon and Mosi Espinoza, who invited filmmaker Robson Dias to accompany their creative process as it confronts its original source of inspiration: the Peruvian Amazon rainforest.": "A inspiração vem da busca de Herzog em sua \"conquista do inútil\", tanto a sua quanto a de seu personagem Fitzcarraldo. O documentário <em>Huella</em> se permite uma busca despretensiosa pelo que faltava nas paisagens majestosas da natureza dita pura. É um projeto performativo concebido e desenvolvido por Justine Bertignon e Mosi Espinoza, que convidaram o cineasta Robson Dias para acompanhar o processo criativo em confronto com sua fonte original de inspiração: a floresta amazônica peruana.",
+  "World premiere at FIFAC – Amazonia and Caribbean International Documentary Film Festival, 2024": "Estreia mundial no FIFAC — Festival Internacional de Documentário da Amazônia e do Caribe, 2024",
+  "Screened in the Écrans Parallèles section": "Exibido na seção Écrans Parallèles",
+  "Directed by Mosi Espinoza and Justine Berthillot": "Direção de Mosi Espinoza e Justine Berthillot",
+  "Edited by Clement Fessy and Mosi Espinoza": "Montagem de Clement Fessy e Mosi Espinoza",
+  "Cinematography by Robson Dias": "Direção de fotografia de Robson Dias",
+  "Sound recording by Mauricio Espinoza": "Som direto de Mauricio Espinoza",
+  "Created during the tour of the stage performance in the Peruvian Amazon": "Criado durante a circulação da performance cênica na Amazônia peruana",
+  "An art-documentary weaving together reality and imagination, bodies and voices, the Amazon forest and the artistic universe": "Um documentário de arte que entrelaça realidade e imaginação, corpos e vozes, floresta amazônica e universo artístico",
+  "A film committed to amplifying Amazonian peoples and their political, ecological and spiritual struggles": "Um filme comprometido em amplificar os povos amazônicos e suas lutas políticas, ecológicas e espirituais",
+  "Why this page matters": "Sobre o projeto"
+};
+
+const staticEnglishTranslations = {
+  "Longa-metragem documental / Brasil–Senegal": "Feature documentary / Brazil–Senegal",
+  "No coração do Senegal, um pequeno vilarejo muçulmano chamado Kabadio é uma espécie de éden místico protegido por líderes religiosos. Este é o cenário para fascinantes histórias de personagens reais que lutam para sobreviver, mantendo suas tradições, em meio à guerra civil e ao contrabando de mercadorias.": "In the heart of Senegal, a small Muslim village called Kabadio is a kind of mystical Eden protected by religious leaders. It is the setting for compelling stories of real people who struggle to survive while preserving their traditions amid civil war and the smuggling of goods.",
+  "Status 2017": "<strong>Status</strong> Completed · 2017",
+  "Runtime 90 min": "<strong>Runtime</strong> 90 min",
+  "Countries Brazil / Senegal": "<strong>Countries</strong> Brazil / Senegal",
+  "Directors Daniel Leite": "<strong>Director</strong> Daniel Leite",
+  "Main recognition Festival do Rio": "<strong>Main recognition</strong> Festival do Rio",
+  "Official Selection — 7th AFRIFF Africa International Film Festival (Nigeria)": "Official Selection — 7th AFRIFF Africa International Film Festival (Nigeria)",
+  "Official Selection — 4e L'Appel des Chantiers (France)": "Official Selection — 4th L'Appel des Chantiers (France)",
+  "Official Selection — 2° Social Machinery Film Festival (Italy)": "Official Selection — 2nd Social Machinery Film Festival (Italy)",
+  "Official Selection — 13ª Mostra de Cinema Documentário [CineDocumenta] (Brazil)": "Official Selection — 13th CineDocumenta Documentary Film Showcase (Brazil)",
+  "Official Selection — 7º Cine Cipó BH – Festival do Filme Insurgente (Brazil)": "Official Selection — 7th Cine Cipó BH – Insurgent Film Festival (Brazil)",
+  "Official Selection — 5ª Mostra Livre de Cinema (Brazil)": "Official Selection — 5th Mostra Livre de Cinema (Brazil)",
+  "Official Selection — 18º Festival do Rio de Cinema (Brazil)": "Official Selection — 18th Festival do Rio (Brazil)",
+  "Official Selection — Cine MIS/SP – Museu da Imagem e do Som (Brazil)": "Official Selection — Cine MIS/SP – Museum of Image and Sound (Brazil)",
+  "Official Selection — 3º Santos Film Festival (Brazil)": "Official Selection — 3rd Santos Film Festival (Brazil)",
+  "Short documentary / France": "Short documentary / France",
+  "Um retrato íntimo de Marianne, uma mulher que convive com vozes e constrói, através delas, uma relação singular com sua própria existência.": "An intimate portrait of Marianne, a woman who lives with voices and, through them, builds a singular relationship with her own existence.",
+  "Status Completed": "<strong>Status</strong> Completed",
+  "Runtime 26 min": "<strong>Runtime</strong> 26 min",
+  "Country France": "<strong>Country</strong> France",
+  "Director Elina Chared": "<strong>Director</strong> Elina Chared",
+  "Cinematography Robson Dias, Célestin Monteil": "<strong>Cinematography</strong> Robson Dias, Célestin Monteil",
+  "Production Aix-Marseille Université": "<strong>Production</strong> Aix-Marseille Université",
+  "Marianne parece carregar várias vidas em seu rosto. A partir de fragmentos do cotidiano, o filme revela sua relação íntima com as vozes que escuta. Entre reinvenção, performance e fragilidade, emerge o retrato de uma mulher que luta para existir na complexidade de sua singularidade.": "Marianne seems to carry several lives in her face. Through fragments of everyday life, the film reveals her intimate relationship with the voices she hears. Between reinvention, performance and vulnerability, a portrait emerges of a woman struggling to exist within the complexity of her singularity.",
+  "Approach": "Approach",
+  "O filme se constrói a partir da proximidade com o rosto e o corpo da protagonista, evitando representações espetaculares das vozes internas e privilegiando uma escuta sensível e exteriorizada da experiência vivida.": "The film is built through proximity to the protagonist's face and body, avoiding spectacular representations of inner voices and privileging a sensitive, externalized listening to lived experience.",
+  "Festival International Jean Rouch – seleção": "Festival International Jean Rouch — Official Selection",
+  "Festival International de Films de Femmes – seleção": "Festival International de Films de Femmes — Official Selection",
+  "Exibido em contextos acadêmicos e festivais documentais": "Screened in academic contexts and documentary festivals",
+  "Produzido no Master Écritures Documentaires – Aix-Marseille": "Produced within the Master Écritures Documentaires — Aix-Marseille",
+  "Role": "Role",
+  "Direção de fotografia compartilhada, construindo uma abordagem visual baseada na proximidade com a personagem, no tempo real e na presença do corpo como eixo central da narrativa.": "Shared cinematography, building a visual approach grounded in proximity to the character, real time and the presence of the body as the narrative's central axis."
+};
+
+const staticProjectTranslations = {
+  en: staticEnglishTranslations,
+  pt: staticPortugueseTranslations,
+  fr: staticFrenchTranslations
+};
+
 const staticFrenchMetadata = {
   "4800.html": ["4800 — Robson Dias", "Page du projet documentaire 4800, réalisé par Robson Dias."],
   "Anas.html": ["Anas — Robson Dias", "Page du court métrage documentaire Anas, coréalisé par Robson Dias."],
@@ -893,13 +1004,8 @@ function translateStaticProjectContent(language) {
       element.dataset.projectSourceText = normalizeTranslationText(element.textContent);
     }
 
-    if (language !== "fr") {
-      element.innerHTML = element.dataset.sourceHtml;
-      return;
-    }
-
-    const translation = staticFrenchTranslations[element.dataset.projectSourceText];
-    if (translation !== undefined) element.innerHTML = translation;
+    const translation = staticProjectTranslations[language]?.[element.dataset.projectSourceText];
+    element.innerHTML = translation !== undefined ? translation : element.dataset.sourceHtml;
   });
 
 }
