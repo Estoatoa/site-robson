@@ -1,7 +1,7 @@
 window.AMEM_AXE_CONTENT = {
   "version": "1.12",
   "publishedAt": "2026-11-03",
-  "publishedAtTime": "11:20",
+  "publishedAtTime": "11:29",
   "approved": {
     "sinopse": "Um cineasta negro, criado na igreja evangélica e batizado aos 10 anos, descobre aos 30 sua origem quilombola ao tentar contar à filha de onde ela vem. Para entender o que sua formação religiosa preservou e o que a afastou dessa memória, ele inicia uma investigação no Rio de Janeiro. Entre igrejas, terreiros, casas, cozinhas e caminhadas pela cidade, acompanha pessoas negras evangélicas e de religiões de matriz africana que confrontam os medos, preconceitos e violências que aprenderam a associar à fé do outro. Em territórios onde igrejas e terreiros sustentam redes de cuidado, o filme pergunta se o encontro pode transformar práticas sem esconder a desigualdade histórica entre o Amém e o Axé.",
     "sinopseCharacterCount": 699,
