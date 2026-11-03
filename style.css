@@ -899,27 +899,49 @@ button {
 }
 
 .contact-grid {
-  padding: 34px;
-  grid-template-columns: 1fr 1fr;
-  align-items: start;
+  padding: 22px 32px;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 32px;
+}
+
+.contact-grid h2 {
+  max-width: 30ch;
+  font-size: 1.8rem;
+  line-height: 1.05;
 }
 
 .contact-info {
   display: flex;
-  min-height: 100%;
-  flex-direction: column;
+  flex-direction: row;
   align-items: flex-start;
-  justify-content: space-between;
-  gap: 30px;
-  font-size: 1.05rem;
+  justify-content: flex-end;
+  gap: 24px;
+  font-size: .92rem;
+  white-space: nowrap;
+}
+
+.contact-info .social-links {
+  gap: 8px;
+  flex-wrap: nowrap;
+}
+
+.contact-info .social-links a {
+  width: 30px;
+  height: 30px;
+}
+
+.contact-info .social-links svg {
+  width: 14px;
+  height: 14px;
 }
 
 .contact-intro {
-  max-width: 32ch;
-  margin-top: 18px;
+  max-width: 64ch;
+  margin-top: 8px;
   color: var(--muted);
-  font-size: 1.02rem;
-  line-height: 1.6;
+  font-size: .82rem;
+  line-height: 1.45;
 }
 
 .video-modal {

@@ -782,6 +782,20 @@ const staticFrenchTranslations = {
 };
 
 const staticPortugueseTranslations = {
+  "Feature documentary / Brazil–France": "Longa-metragem documental / Brasil–França",
+  "Status Post-production": "<strong>Status</strong> Pós-produção",
+  "Runtime 90 min": "<strong>Duração</strong> 90 min",
+  "Countries Brazil / France": "<strong>Países</strong> Brasil / França",
+  "Directors Myrza Muniz, Robson Dias, Célia Tupinambá": "<strong>Direção</strong> Myrza Muniz, Robson Dias, Célia Tupinambá",
+  "Looking for Gap financing, buyers, sales agents, international co-producers": "<strong>Em busca de</strong> Financiamento complementar, compradores, agentes de vendas e coprodutores internacionais",
+  "Main recognition Cannes Docs 2025 / Docs-in-Progress winner": "<strong>Reconhecimento principal</strong> Cannes Docs 2025 / vencedor do Docs-in-Progress",
+  "Winner of Docs-in-Progress Award — Marché du Film, Cannes 2025": "Vencedor do Docs-in-Progress Award — Marché du Film, Cannes 2025",
+  "Official Selection — Brazilian Showcase, Cannes Docs 2025": "Seleção oficial — Brazilian Showcase, Cannes Docs 2025",
+  "Winner of MiradasDoc Award — DOCSP 2025": "Vencedor do MiradasDoc Award — DOCSP 2025",
+  "Selected for DOCSUR Pitching Lab — Miradas Afroindígenas Market 2025": "Selecionado para o DOCSUR Pitching Lab — Miradas Afroindígenas Market 2025",
+  "Participant — European Film Market, Berlinale 2024": "Participação — European Film Market, Berlinale 2024",
+  "Selected for Nicho Laboratory": "Selecionado para o Laboratório Nicho",
+  "Selected for Dialab Laboratory": "Selecionado para o Laboratório Dialab",
   "A short documentary about tourism, representation, and the tensions between image, market, and territory in the favelas of Rio de Janeiro.": "Um curta documental sobre turismo, representação e as tensões entre imagem, mercado e território nas favelas do Rio de Janeiro.",
   "Short documentary": "Curta documental",
   "Watch on MAX": "Assistir na MAX",
@@ -842,6 +856,11 @@ const staticPortugueseTranslations = {
 };
 
 const staticEnglishTranslations = {
+  "Feature documentary / Brazil–France": "Feature documentary / Brazil–France",
+  "Eu Ouvi o Chamado: O Retorno dos Mantos Tupinambá": "I Heard the Calling: The Return of the Tupinambá Cloak",
+  "Célia Tupinambá atravessa museus europeus em busca dos onze mantos sagrados de seu povo, deslocando a discussão da restituição para um terreno espiritual, político e estético.": "Célia Tupinambá moves through European museums in search of the eleven sacred cloaks of her people, shifting the discussion of restitution onto spiritual, political and aesthetic ground.",
+  "O filme acompanha a jornada de Célia Tupinambá, artista e liderança indígena, pelos museus europeus onde permanecem os mantos sagrados de seu povo. Distante da aldeia, ela conduz um movimento de retorno desses ancestrais vivos e reabre a história colonial a partir do corpo, da arte, da memória e da reparação cultural.": "The film follows Célia Tupinambá, an artist and Indigenous leader, through European museums where the sacred cloaks of her people remain. Far from her village, she leads a movement for the return of these living ancestors and reopens colonial history through the body, art, memory and cultural reparation.",
+  "Esta subpágina foi pensada para programadores, financiadores, coprodutores e instituições: ela deve concentrar teaser, stills, sinopse, trajectory, parceiros, press quotes e um bloco claro com o que o projeto busca neste momento.": "This page is intended for programmers, funders, co-producers and institutions. It brings together the teaser, stills, synopsis, trajectory, partners, press quotes and a clear account of the project's current needs.",
   "Longa-metragem documental / Brasil–Senegal": "Feature documentary / Brazil–Senegal",
   "No coração do Senegal, um pequeno vilarejo muçulmano chamado Kabadio é uma espécie de éden místico protegido por líderes religiosos. Este é o cenário para fascinantes histórias de personagens reais que lutam para sobreviver, mantendo suas tradições, em meio à guerra civil e ao contrabando de mercadorias.": "In the heart of Senegal, a small Muslim village called Kabadio is a kind of mystical Eden protected by religious leaders. It is the setting for compelling stories of real people who struggle to survive while preserving their traditions amid civil war and the smuggling of goods.",
   "Status 2017": "<strong>Status</strong> Completed · 2017",
@@ -896,6 +915,10 @@ const staticFrenchMetadata = {
   "talks.html": ["Rencontres, transmission et mentorat — Robson Dias", "Interventions publiques, enseignement et mentorat de Robson Dias autour du cinéma, de la pratique documentaire et de la représentation."]
 };
 
+const staticEnglishMetadata = {
+  "manto.html": ["I Heard the Calling: The Return of the Tupinambá Cloak — Robson Dias", "Project page for I Heard the Calling: The Return of the Tupinambá Cloak."]
+};
+
 const staticFrenchAttributes = {
   "I Heard the Calling film still": "Image du film J'ai entendu l'appel",
   "Ritual scene": "Scène de rituel",
@@ -933,6 +956,11 @@ const staticFrenchAttributes = {
   "Partner region-sud": "Logo partenaire Région Sud",
   "Partner logo 12": "Logo partenaire 12",
   "Partner logo 13": "Logo partenaire 13"
+};
+
+const staticEnglishAttributes = {
+  "Teaser do projeto": "Project teaser",
+  "Still do filme": "Film still"
 };
 
 const staticFrenchHomeTranslations = {
@@ -974,8 +1002,9 @@ function translateStaticProjectContent(language) {
     const attribute = element.hasAttribute("alt") ? "alt" : element.hasAttribute("title") ? "title" : element.hasAttribute("aria-label") ? "aria-label" : null;
     if (!attribute) return;
     if (!element.dataset.sourceAttribute) element.dataset.sourceAttribute = element.getAttribute(attribute);
-    if (language === "fr") {
-      const translation = staticFrenchAttributes[element.dataset.sourceAttribute];
+    const attributes = language === "fr" ? staticFrenchAttributes : language === "en" ? staticEnglishAttributes : null;
+    if (attributes) {
+      const translation = attributes[element.dataset.sourceAttribute];
       if (translation !== undefined) element.setAttribute(attribute, translation);
     } else {
       element.setAttribute(attribute, element.dataset.sourceAttribute);
@@ -985,12 +1014,12 @@ function translateStaticProjectContent(language) {
   if (!document.body.classList.contains("project-page")) return;
 
   const filename = window.location.pathname.split("/").pop();
-  const metadata = staticFrenchMetadata[filename];
+  const metadata = language === "fr" ? staticFrenchMetadata[filename] : language === "en" ? staticEnglishMetadata[filename] : null;
   const title = document.querySelector("head title");
   const description = document.querySelector('meta[name="description"]');
   if (title && !title.dataset.sourceText) title.dataset.sourceText = title.textContent;
   if (description && !description.dataset.sourceContent) description.dataset.sourceContent = description.content;
-  if (language === "fr" && metadata) {
+  if (metadata) {
     if (title) title.textContent = metadata[0];
     if (description) description.content = metadata[1];
   } else {
@@ -1001,7 +1030,10 @@ function translateStaticProjectContent(language) {
   document.querySelectorAll("main h1, main h2, main h3, main p, main li, main .section-kicker, main a.btn").forEach((element) => {
     if (!element.dataset.sourceHtml) {
       element.dataset.sourceHtml = element.innerHTML;
-      element.dataset.projectSourceText = normalizeTranslationText(element.textContent);
+      const sourceText = element.querySelector("br")
+        ? element.innerHTML.replace(/<br\s*\/?\s*>/gi, " ").replace(/<[^>]+>/g, " ")
+        : element.textContent;
+      element.dataset.projectSourceText = normalizeTranslationText(sourceText);
     }
 
     const translation = staticProjectTranslations[language]?.[element.dataset.projectSourceText];
