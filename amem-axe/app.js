@@ -75,7 +75,7 @@
           <div class="status-strip"><span class="tag work">em desenvolvimento</span><span class="tag source">Rio de Janeiro</span><span class="tag ready">70 min · documentário</span></div>
         </div>
         <figure class="hero-art">
-          <img src="./assets/amem-axe-symbol-portrait.jpeg?v=1.12-20261103" alt="Braço negro ergue um objeto de ferro que une símbolos do cristianismo e das religiões de matriz africana.">
+          <img src="./assets/amem-axe-symbol-portrait.jpeg?v=1.12-fb93cb3" alt="Braço negro ergue um objeto de ferro que une símbolos do cristianismo e das religiões de matriz africana.">
           <figcaption>Uma imagem para a encruzilhada entre Amém e Axé.</figcaption>
         </figure>
       </section>
@@ -103,7 +103,7 @@
     return `<div class="wrap">
       ${pageHead("textos aprovados", "O filme", "Sinopse, visão do diretor e pontos fortes preparados para a inscrição. O roteiro documental possui uma página própria.")}
       <figure class="symbol-band">
-        <img src="./assets/amem-axe-symbol-wide.png?v=1.12-20261103" alt="Mão sustenta um objeto de ferro que aproxima símbolos do cristianismo e das religiões de matriz africana.">
+        <img src="./assets/amem-axe-symbol-wide.png?v=1.12-fb93cb3" alt="Mão sustenta um objeto de ferro que aproxima símbolos do cristianismo e das religiões de matriz africana.">
         <figcaption>O símbolo central do projeto: duas tradições ligadas pelo mesmo corpo.</figcaption>
       </figure>
       <div class="editorial-layout">
@@ -151,14 +151,14 @@
           <section class="travel-movement" id="travessia-m1">
             <p class="eyebrow">movimento 01</p><h2>${esc(movements[0].title)}</h2>
             ${prose(0, 5)}
-            <figure class="travel-photo travel-photo-old"><img src="./assets/robson-igreja-juventude.jpeg?v=1.12-20261103" alt="Robson jovem, ao lado de um rapaz, dentro da igreja que frequentava."><figcaption>Uma lembrança da vida na igreja, antes da partida para o Rio.</figcaption></figure>
+            <figure class="travel-photo travel-photo-old"><img src="./assets/robson-igreja-juventude.jpeg?v=1.12-fb93cb3" alt="Robson jovem, ao lado de um rapaz, dentro da igreja que frequentava."><figcaption>Uma lembrança da vida na igreja, antes da partida para o Rio.</figcaption></figure>
             ${prose(5, movements[0].to)}
             <aside class="archive-pair" id="TRA-ARQUIVO" aria-label="Arquivo audiovisual: o corte de cabelo na igreja">
               <p class="eyebrow">arquivo pessoal · 2012</p>
               <h3>O corpo também atravessa a história</h3>
               <p>O registro acompanha o corte dos cabelos de Robson dentro da igreja. Dois fragmentos preservam o começo e o momento final dessa transformação.</p>
               <div class="archive-videos archive-videos-single">
-                <figure><video controls loop preload="metadata" playsinline poster="./assets/cortando-frame-inicio.jpg?v=1.12-20261103"><source src="./assets/cortando-o-cabelo-montagem.mp4?v=1.12-20261103" type="video/mp4">Seu navegador não reproduz este vídeo.</video><figcaption>Arquivo familiar · montagem em loop</figcaption></figure>
+                <figure><video controls loop preload="metadata" playsinline poster="./assets/cortando-frame-inicio.jpg?v=1.12-fb93cb3"><source src="./assets/cortando-o-cabelo-montagem.mp4?v=1.12-fb93cb3" type="video/mp4">Seu navegador não reproduz este vídeo.</video><figcaption>Arquivo familiar · montagem em loop</figcaption></figure>
               </div>
               <p class="archive-note">Dois momentos do mesmo gesto, unidos em sequência. A trilha “Lagos”, de Quincas Moreira, acompanha o trecho inteiro; o som original do vídeo ganha destaque na segunda parte. <a href="https://www.quincasmoreira.com/music-and-sound-libraries" target="_blank" rel="noreferrer">Crédito e referência da faixa ↗</a></p>
             </aside>
@@ -174,7 +174,7 @@
           <section class="travel-movement" id="travessia-m4">
             <p class="eyebrow">movimento 04</p><h2>${esc(movements[3].title)}</h2>
             ${prose(movements[3].from, movements[3].to)}
-            <figure class="travel-photo travel-photo-current"><img src="./assets/robson-retrato-atual.jpg?v=1.12-20261103" alt="Retrato atual de Robson Dias, diretor do filme."><figcaption>Robson Dias, hoje. A investigação continua entre memória, fé e pertencimento.</figcaption></figure>
+            <figure class="travel-photo travel-photo-current"><img src="./assets/robson-retrato-atual.jpg?v=1.12-fb93cb3" alt="Retrato atual de Robson Dias, diretor do filme."><figcaption>Robson Dias, hoje. A investigação continua entre memória, fé e pertencimento.</figcaption></figure>
             <p class="source-link-line"><a href="${esc(DATA.autobiografia.url)}" target="_blank" rel="noreferrer">Abrir o documento de origem ↗</a></p>
           </section>
         </article>
@@ -290,7 +290,7 @@
     ];
     return `<div class="wrap">
       ${pageHead("anexo III · edital nº 10", "RioFilme", "Um recorte prático: primeiro, o que precisa ser escrito ou apresentado pelo diretor; depois, apenas a menção às demais frentes da inscrição.")}
-      <figure class="riofilme-brand"><img src="./assets/riofilme-logo.jpg?v=1.12-20261103" alt="Logotipo da RioFilme"><figcaption>Mapa de textos e documentos para a inscrição no edital.</figcaption></figure>
+      <figure class="riofilme-brand"><img src="./assets/riofilme-logo.jpg?v=1.12-fb93cb3" alt="Logotipo da RioFilme"><figcaption>Mapa de textos e documentos para a inscrição no edital.</figcaption></figure>
       <div class="editorial-layout">
         <nav class="section-index"><a href="#RF-01">Entrega criativa</a><a href="#RF-02">Documentos pessoais</a><a href="#RF-03">Demais frentes</a></nav>
         <div class="editorial-content">

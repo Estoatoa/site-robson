@@ -61,7 +61,7 @@ a { color: inherit; }
   width: 86px;
   height: 30px;
   display: block;
-  background: transparent url("./assets/amem-axe-symbol-transparent-v2.png?v=1.12-20261103") center / contain no-repeat;
+  background: transparent url("./assets/amem-axe-symbol-transparent-v2.png?v=1.12-fb93cb3") center / contain no-repeat;
 }
 .brand-mark::before, .brand-mark::after, .brand-mark i, .brand-mark b { display: none; }
 .menu { display: flex; gap: 1.4rem; align-items: center; }
