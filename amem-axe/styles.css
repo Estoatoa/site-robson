@@ -280,11 +280,15 @@ h1, h2, h3, .display {
 .travel-photo-old { max-width: 740px; }
 .travel-photo-current { max-width: 660px; margin: 4rem auto; }
 .travel-photo-current img { max-height: 780px; object-position: center 36%; }
+.travel-photo-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; align-items: start; margin: 4rem 0; }
+.travel-photo-pair .travel-photo-current { max-width: none; margin: 0; }
+.travel-photo-pair .travel-photo-current img { aspect-ratio: 4 / 5; max-height: none; object-fit: cover; }
 .travel-photo figcaption, .archive-videos figcaption { margin-top: .75rem; color: var(--muted); font-size: .8rem; }
 .archive-pair { margin: 4rem 0; padding: 2.5rem; background: var(--paper-2); border-top: 3px solid var(--ink); }
 .archive-pair h3 { margin: .3rem 0 1rem; font-family: Georgia, serif; font-size: clamp(1.7rem, 3vw, 2.6rem); font-weight: 500; }
 .archive-pair > p:not(.eyebrow) { max-width: 760px; }
 .archive-videos { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 2rem; }
+.archive-videos-single { max-width: 44rem; }
 .archive-videos figure { margin: 0; }
 .archive-videos video { display: block; width: 100%; background: #111; }
 .archive-note { margin-top: 1.5rem; color: var(--muted); font-size: .82rem !important; }
@@ -326,38 +330,11 @@ h1, h2, h3, .display {
 .version-line time { color: var(--muted); font-size: .8rem; }
 .source-links { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 2rem; }
 .symbol-band {
-  position: relative;
   margin: 2rem 0 0;
   height: clamp(240px, 34vw, 430px);
-  overflow: hidden;
-  background: var(--paper-2);
   border-bottom: 1px solid var(--ink);
 }
-.symbol-band::before {
-  content: "";
-  position: absolute;
-  z-index: 2;
-  inset: 0 auto 0 0;
-  width: 24%;
-  background: linear-gradient(135deg, var(--orange), rgb(124 33 23 / .88));
-  mix-blend-mode: multiply;
-  clip-path: polygon(0 0, 100% 0, 35% 100%, 0 100%);
-  pointer-events: none;
-}
-.symbol-band img { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; filter: contrast(1.04); }
-.symbol-band figcaption {
-  position: absolute;
-  z-index: 3;
-  right: 1.2rem;
-  bottom: 1.2rem;
-  max-width: 310px;
-  padding: .7rem .9rem;
-  background: white;
-  border: 1px solid var(--ink);
-  font-size: .72rem;
-  letter-spacing: .06em;
-  text-transform: uppercase;
-}
+.symbol-band img { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; }
 .button {
   display: inline-flex;
   align-items: center;
@@ -474,6 +451,7 @@ footer {
   .dependency-map { grid-template-columns: 1fr; }
   .archive-pair { padding: 1.25rem; }
   .archive-videos { grid-template-columns: 1fr; }
+  .travel-photo-pair { grid-template-columns: 1fr; gap: 1rem; }
   .script-toolbar { top: 64px; }
   .script-layout { grid-template-columns: 1fr; gap: 0; }
   .script-side-index { position: static; display: flex; gap: .75rem; overflow-x: auto; padding: 1.5rem 0 0; }

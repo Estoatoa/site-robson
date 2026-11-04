@@ -104,7 +104,6 @@
       ${pageHead("textos aprovados", "O filme", "Sinopse, visão do diretor e pontos fortes preparados para a inscrição. O roteiro documental possui uma página própria.")}
       <figure class="symbol-band">
         <img src="./assets/amem-axe-symbol-wide.png?v=1.12-fb93cb3" alt="Mão sustenta um objeto de ferro que aproxima símbolos do cristianismo e das religiões de matriz africana.">
-        <figcaption>O símbolo central do projeto: duas tradições ligadas pelo mesmo corpo.</figcaption>
       </figure>
       <div class="editorial-layout">
         <nav class="section-index" aria-label="Nesta página">
@@ -135,11 +134,12 @@
     const prose = (from, to) => paragraphs.slice(from, to).map((p, i) => {
       const index = from + i;
       const id = code("TRA", index);
+      if (p === "É aqui que começa minha história.") return "";
       if (index === 18) return `<p class="travel-turn" id="${id}">${esc(p)}</p>`;
       return `<p class="source-paragraph" id="${id}">${esc(p)}</p>`;
     }).join("");
     return `<div class="wrap">
-      ${pageHead("relato autobiográfico do diretor", "Travessia", "Da música que me levou à igreja à descoberta da origem quilombola: uma história de fé, dúvida, formação e memória, narrada a partir da relação com minha filha.")}
+      ${pageHead("relato autobiográfico do diretor", "Travessia", "Uma travessia entre música, igreja, paternidade e a descoberta de uma ancestralidade quilombola.")}
       <div class="editorial-layout travel-layout">
         <nav class="section-index travel-index" aria-label="Percurso do relato">
           <a href="#travessia-m1">01 · Infância e igreja</a>
@@ -158,9 +158,9 @@
               <h3>O corpo também atravessa a história</h3>
               <p>O registro acompanha o corte dos cabelos de Robson dentro da igreja. Dois fragmentos preservam o começo e o momento final dessa transformação.</p>
               <div class="archive-videos archive-videos-single">
-                <figure><video controls loop preload="metadata" playsinline poster="./assets/cortando-frame-inicio.jpg?v=1.12-fb93cb3"><source src="./assets/cortando-o-cabelo-montagem.mp4?v=1.12-fb93cb3" type="video/mp4">Seu navegador não reproduz este vídeo.</video><figcaption>Arquivo familiar · montagem em loop</figcaption></figure>
+                <figure><video controls loop preload="metadata" playsinline poster="./assets/cortando-frame-inicio.jpg?v=1.12-fb93cb3"><source src="./assets/cortando-o-cabelo-montagem.mp4?v=1.12-fb93cb3" type="video/mp4">Seu navegador não reproduz este vídeo.</video></figure>
               </div>
-              <p class="archive-note">Dois momentos do mesmo gesto, unidos em sequência. A trilha “Lagos”, de Quincas Moreira, acompanha o trecho inteiro; o som original do vídeo ganha destaque na segunda parte. <a href="https://www.quincasmoreira.com/music-and-sound-libraries" target="_blank" rel="noreferrer">Crédito e referência da faixa ↗</a></p>
+              <p class="archive-note">Arquivo pessoal de reconversão em 2012.</p>
             </aside>
           </section>
           <section class="travel-movement" id="travessia-m2">
@@ -174,7 +174,10 @@
           <section class="travel-movement" id="travessia-m4">
             <p class="eyebrow">movimento 04</p><h2>${esc(movements[3].title)}</h2>
             ${prose(movements[3].from, movements[3].to)}
-            <figure class="travel-photo travel-photo-current"><img src="./assets/robson-retrato-atual.jpg?v=1.12-fb93cb3" alt="Retrato atual de Robson Dias, diretor do filme."><figcaption>Robson Dias, hoje. A investigação continua entre memória, fé e pertencimento.</figcaption></figure>
+            <div class="travel-photo-pair">
+              <figure class="travel-photo travel-photo-current"><img src="./assets/robson-retrato-atual.jpg?v=1.12-fb93cb3" alt="Retrato atual de Robson Dias, diretor do filme."></figure>
+              <figure class="travel-photo travel-photo-current"><img src="./assets/robson-retrato-mdf.jpg" alt="Robson Dias com participantes do Brasil no Marché du Film de Cannes, em 2025."></figure>
+            </div>
             <p class="source-link-line"><a href="${esc(DATA.autobiografia.url)}" target="_blank" rel="noreferrer">Abrir o documento de origem ↗</a></p>
           </section>
         </article>
