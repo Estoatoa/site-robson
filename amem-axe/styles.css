@@ -334,7 +334,7 @@ h1, h2, h3, .display {
   height: clamp(240px, 34vw, 430px);
   border-bottom: 1px solid var(--ink);
 }
-.symbol-band img { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; }
+.symbol-band img { width: 100%; height: 100%; object-fit: contain; object-position: center; display: block; }
 .button {
   display: inline-flex;
   align-items: center;

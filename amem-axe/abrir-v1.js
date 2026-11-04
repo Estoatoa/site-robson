@@ -12,7 +12,7 @@ form.addEventListener('submit',async event=>{
   let stage='download';
   try{
     if(!globalThis.crypto?.subtle)throw new Error('unsupported');
-    const response=await fetch('conteudo.json?revision=amemaxe-20261104b',{cache:'no-store',credentials:'omit'});
+    const response=await fetch('conteudo.json?revision=amemaxe-20261104c',{cache:'no-store',credentials:'omit'});
     if(!response.ok)throw new Error('download');
     const payload=await response.json();
     if(payload.version!==1||payload.kdf!=='PBKDF2-SHA256'||payload.iterations!==600000)throw new Error('format');
