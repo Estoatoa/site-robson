@@ -153,15 +153,13 @@
             ${prose(0, 5)}
             <figure class="travel-photo travel-photo-old"><img src="./assets/robson-igreja-juventude.jpeg?v=1.12-fb93cb3" alt="Robson jovem, ao lado de um rapaz, dentro da igreja que frequentava."><figcaption>Uma lembrança da vida na igreja, antes da partida para o Rio.</figcaption></figure>
             ${prose(5, movements[0].to)}
-            <aside class="archive-pair" id="TRA-ARQUIVO" aria-label="Arquivo audiovisual: o corte de cabelo na igreja">
+            <section class="archive-interlude" id="TRA-ARQUIVO" aria-label="Arquivo audiovisual: o corte de cabelo na igreja">
               <p class="eyebrow">arquivo pessoal · 2012</p>
               <h3>O corpo também atravessa a história</h3>
               <p>O registro acompanha o corte dos cabelos de Robson dentro da igreja. Dois fragmentos preservam o começo e o momento final dessa transformação.</p>
-              <div class="archive-videos archive-videos-single">
-                <figure><video controls loop preload="metadata" playsinline poster="./assets/cortando-frame-inicio.jpg?v=1.12-fb93cb3"><source src="./assets/cortando-o-cabelo-montagem.mp4?v=1.12-fb93cb3" type="video/mp4">Seu navegador não reproduz este vídeo.</video></figure>
-              </div>
+              <figure class="archive-film"><video class="archive-video" autoplay muted loop preload="metadata" playsinline poster="./assets/cortando-frame-inicio.jpg?v=1.12-fb93cb3"><source src="./assets/cortando-o-cabelo-montagem.mp4?v=1.12-fb93cb3" type="video/mp4">Seu navegador não reproduz este vídeo.</video><button class="sound-toggle" type="button" data-audio-toggle aria-pressed="false">Ativar som</button></figure>
               <p class="archive-note">Arquivo pessoal de reconversão em 2012.</p>
-            </aside>
+            </section>
           </section>
           <section class="travel-movement" id="travessia-m2">
             <p class="eyebrow">movimento 02</p><h2>${esc(movements[1].title)}</h2>
@@ -309,8 +307,8 @@
             <ul class="checklist">${personal.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>
           </section>
           <section class="text-block" id="RF-03">
-            <h2>Demais frentes — apenas mapa</h2>
-            <p>Estas partes são indispensáveis para a inscrição, mas não devem diluir o espaço editorial dedicado à direção.</p>
+            <h2>Demais frentes</h2>
+            <p>Produção, financiamento, circulação, equipe, documentação institucional e políticas afirmativas sustentam a proposta. Essas frentes devem avançar em paralelo aos materiais criativos para que a inscrição seja completa, coerente e viável.</p>
             <div class="dependency-map">${rest.map(([t,b])=>`<article><h3>${esc(t)}</h3><p>${esc(b)}</p></article>`).join("")}</div>
           </section>
         </div>
@@ -371,6 +369,16 @@
     versoes: renderVersoes
   };
 
+  function watchArchiveVideo() {
+    const archiveVideo = document.querySelector(".archive-video");
+    if (!archiveVideo || archiveVideo.dataset.observed || !("IntersectionObserver" in window)) return;
+    archiveVideo.dataset.observed = "true";
+    new IntersectionObserver(entries => entries.forEach(entry => {
+      if (entry.isIntersecting) archiveVideo.play().catch(() => {});
+      else archiveVideo.pause();
+    }), { threshold: 0.35 }).observe(archiveVideo);
+  }
+
   function showView(name, updateHash = true) {
     const anchorId = ["roteiro-", "DIR-", "TRA-", "RF-"].some(prefix => name.startsWith(prefix)) ? name : "";
     const anchorView = name.startsWith("roteiro-") ? "roteiro" : name.startsWith("DIR-") ? "direcao" : name.startsWith("TRA-") ? "travessia" : name.startsWith("RF-") ? "riofilme" : "";
@@ -381,6 +389,7 @@
       if (active && !v.dataset.rendered) {
         v.innerHTML = renderers[next]();
         v.dataset.rendered = "true";
+        if (next === "travessia") watchArchiveVideo();
       }
     });
     document.querySelectorAll("[data-nav]").forEach(a => a.setAttribute("aria-current", a.dataset.nav === next ? "page" : "false"));
@@ -395,6 +404,17 @@
   }
 
   document.addEventListener("click", async e => {
+    const audioToggle = e.target.closest("[data-audio-toggle]");
+    if (audioToggle) {
+      const video = audioToggle.closest(".archive-film")?.querySelector("video");
+      if (!video) return;
+      video.muted = !video.muted;
+      if (!video.muted) video.volume = 1;
+      try { await video.play(); } catch {}
+      audioToggle.setAttribute("aria-pressed", String(!video.muted));
+      audioToggle.textContent = video.muted ? "Ativar som" : "Silenciar";
+      return;
+    }
     const roteiroAnchor = e.target.closest('a[href^="#roteiro-"]');
     if (roteiroAnchor) {
       e.preventDefault();
