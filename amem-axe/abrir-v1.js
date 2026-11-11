@@ -12,7 +12,7 @@ form.addEventListener('submit',async event=>{
   let stage='download';
   try{
     if(!globalThis.crypto?.subtle)throw new Error('unsupported');
-    const response=await fetch('conteudo.json?revision=amemaxe-20261104c',{cache:'no-store',credentials:'omit'});
+    const response=await fetch('conteudo.json?revision=axeamem-20261111',{cache:'no-store',credentials:'omit'});
     if(!response.ok)throw new Error('download');
     const payload=await response.json();
     if(payload.version!==1||payload.kdf!=='PBKDF2-SHA256'||payload.iterations!==600000)throw new Error('format');
@@ -21,7 +21,8 @@ form.addEventListener('submit',async event=>{
     passwordField.value='';
     const key=await crypto.subtle.deriveKey({name:'PBKDF2',salt:decode(payload.salt),iterations:payload.iterations,hash:'SHA-256'},material,{name:'AES-GCM',length:256},false,['decrypt']);
     const clear=await crypto.subtle.decrypt({name:'AES-GCM',iv:decode(payload.iv)},key,decode(payload.ciphertext));
-    document.open();document.write(new TextDecoder().decode(clear));document.close();
+    const html=new TextDecoder().decode(clear).replaceAll("AMÉM AXÉ","AXÉ AMÉM").replaceAll("AMÉM<br><em>AXÉ</em>","AXÉ<br><em>AMÉM</em>").replaceAll("amemaxe-20261104c","axeamem-20261111").replaceAll("1.12-fb93cb3","1.13-axe-amem");
+    document.open();document.write(html);document.close();
     window.scrollTo(0,0);
   }catch(error){
     status.textContent=stage==='decrypt'?'Senha incorreta ou conteúdo inválido. Tente novamente.':'Não foi possível abrir. Verifique a conexão e use um navegador atualizado com HTTPS.';

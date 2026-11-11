@@ -1,5 +1,7 @@
 (() => {
   const DATA = window.AMEM_AXE_CONTENT;
+  document.title = "AXÉ AMÉM — Dossiê editorial";
+  document.querySelectorAll(".brand strong").forEach(node => { node.textContent = "AXÉ AMÉM"; });
   const views = [...document.querySelectorAll(".view")];
   const menu = document.querySelector(".menu");
   const menuToggle = document.querySelector(".menu-toggle");
@@ -70,12 +72,12 @@
       <section class="hero">
         <div class="hero-text">
           <p class="eyebrow">documentário em desenvolvimento</p>
-          <h1>AMÉM<br><em>AXÉ</em></h1>
+          <h1>AXÉ<br><em>AMÉM</em></h1>
           <p class="hero-copy">Um cineasta negro investiga como pessoas negras evangélicas e de terreiro passaram a se enxergar como inimigas — e o que seus encontros revelam sobre fé, memória e sobrevivência.</p>
           <div class="status-strip"><span class="tag work">em desenvolvimento</span><span class="tag source">Rio de Janeiro</span><span class="tag ready">70 min · documentário</span></div>
         </div>
         <figure class="hero-art">
-          <img src="./assets/amem-axe-symbol-portrait.jpeg?v=1.12-fb93cb3" alt="Braço negro ergue um objeto de ferro que une símbolos do cristianismo e das religiões de matriz africana.">
+          <img src="./assets/amem-axe-symbol-portrait.jpeg?v=1.13-axe-amem" alt="Braço negro ergue um objeto de ferro que une símbolos do cristianismo e das religiões de matriz africana.">
           <figcaption>Uma imagem para a encruzilhada entre Amém e Axé.</figcaption>
         </figure>
       </section>
@@ -151,13 +153,13 @@
           <section class="travel-movement" id="travessia-m1">
             <p class="eyebrow">movimento 01</p><h2>${esc(movements[0].title)}</h2>
             ${prose(0, 5)}
-            <figure class="travel-photo travel-photo-old"><img src="./assets/robson-igreja-juventude.jpeg?v=1.12-fb93cb3" alt="Robson jovem, ao lado de um rapaz, dentro da igreja que frequentava."><figcaption>Uma lembrança da vida na igreja, antes da partida para o Rio.</figcaption></figure>
+            <figure class="travel-photo travel-photo-old"><img src="./assets/robson-igreja-juventude.jpeg?v=1.13-axe-amem" alt="Robson jovem, ao lado de um rapaz, dentro da igreja que frequentava."><figcaption>Uma lembrança da vida na igreja, antes da partida para o Rio.</figcaption></figure>
             ${prose(5, movements[0].to)}
             <section class="archive-interlude" id="TRA-ARQUIVO" aria-label="Arquivo audiovisual: o corte de cabelo na igreja">
               <p class="eyebrow">arquivo pessoal · 2012</p>
               <h3>O corpo também atravessa a história</h3>
               <p>O registro acompanha o corte dos cabelos de Robson dentro da igreja. Dois fragmentos preservam o começo e o momento final dessa transformação.</p>
-              <figure class="archive-film"><video class="archive-video" autoplay muted loop preload="metadata" playsinline poster="./assets/cortando-frame-inicio.jpg?v=1.12-fb93cb3"><source src="./assets/cortando-o-cabelo-montagem.mp4?v=1.12-fb93cb3" type="video/mp4">Seu navegador não reproduz este vídeo.</video><button class="sound-toggle" type="button" data-audio-toggle aria-pressed="false">Ativar som</button></figure>
+              <figure class="archive-film"><video class="archive-video" autoplay muted loop preload="metadata" playsinline poster="./assets/cortando-frame-inicio.jpg?v=1.13-axe-amem"><source src="./assets/cortando-o-cabelo-montagem.mp4?v=1.13-axe-amem" type="video/mp4">Seu navegador não reproduz este vídeo.</video><button class="sound-toggle" type="button" data-audio-toggle aria-pressed="false">Ativar som</button></figure>
               <p class="archive-note">Arquivo pessoal de reconversão em 2012.</p>
             </section>
           </section>
@@ -173,7 +175,7 @@
             <p class="eyebrow">movimento 04</p><h2>${esc(movements[3].title)}</h2>
             ${prose(movements[3].from, movements[3].to)}
             <div class="travel-photo-pair">
-              <figure class="travel-photo travel-photo-current"><img src="./assets/robson-retrato-atual.jpg?v=1.12-fb93cb3" alt="Retrato atual de Robson Dias, diretor do filme."></figure>
+              <figure class="travel-photo travel-photo-current"><img src="./assets/robson-retrato-atual.jpg?v=1.13-axe-amem" alt="Retrato atual de Robson Dias, diretor do filme."></figure>
               <figure class="travel-photo travel-photo-current"><img src="./assets/robson-retrato-mdf.jpg" alt="Robson Dias com participantes do Brasil no Marché du Film de Cannes, em 2025."></figure>
             </div>
             <p class="source-link-line"><a href="${esc(DATA.autobiografia.url)}" target="_blank" rel="noreferrer">Abrir o documento de origem ↗</a></p>
@@ -212,15 +214,15 @@
         </aside>
         <main class="script-flow">
           <section class="script-part" id="roteiro-personagens">
-            <header class="script-part-head"><div><p class="eyebrow">movimento i · texto aprovado</p><h2>Personagens e objetos centrais</h2></div><span class="tag ready">11.985 caracteres</span></header>
+            <header class="script-part-head"><div><p class="eyebrow">movimento i · texto aprovado</p><h2>Personagens e objetos centrais</h2></div><span class="tag ready">14.074 caracteres</span></header>
             <article class="script-reader">${continuousScript(personagens)}</article>
           </section>
           <section class="script-part" id="roteiro-estrategias">
-            <header class="script-part-head"><div><p class="eyebrow">movimento ii · texto aprovado</p><h2>Estratégias de abordagem</h2></div><span class="tag ready">6.990 caracteres</span></header>
+            <header class="script-part-head"><div><p class="eyebrow">movimento ii · texto aprovado</p><h2>Estratégias de abordagem</h2></div><span class="tag ready">8.138 caracteres</span></header>
             <article class="script-reader">${continuousScript(estrategias)}</article>
           </section>
           <section class="script-part" id="roteiro-estrutura">
-            <header class="script-part-head"><div><p class="eyebrow">movimento iii · texto aprovado</p><h2>Arco narrativo e organização da montagem</h2></div><span class="tag ready">6.306 caracteres</span></header>
+            <header class="script-part-head"><div><p class="eyebrow">movimento iii · texto aprovado</p><h2>Arco narrativo e organização da montagem</h2></div><span class="tag ready">7.366 caracteres</span></header>
             <article class="script-reader">${continuousScript(estrutura)}</article>
           </section>
         </main>
@@ -252,6 +254,7 @@
       <div class="editorial-layout">
         <aside class="section-index"><a href="#${prefix}-01">Início do texto</a><a href="#fontes">Fontes originais</a></aside>
         <article class="editorial-content">${investigation}
+          ${isProposal ? "" : `<section class="text-block" id="valores-civilizatorios"><h2>Comida, memória e valores civilizatórios afro-brasileiros</h2><p>No seu relato em Axé-Amém, Raquel Rodrigues lembra que tinha medo de aceitar água e bolo na casa de Dona Benta, mulher de axé da Cidade de Deus. Anos depois, preparou comida numa casa de Oxum e reconheceu nesse trabalho uma memória da própria ancestralidade. Ela também cita Azoilda Loretto da Trindade, educadora que sistematizou os valores civilizatórios afro-brasileiros.</p><p>Essa reflexão ajuda a observar o que acontece nas cenas: a oralidade nas histórias contadas durante o preparo, a memória nos gestos aprendidos, a cooperação entre quem cozinha e serve, a circularidade das rodas, a musicalidade e a corporeidade das celebrações. A pergunta para o filme é concreta: quem recebe a comida, quem a recusa e o que cada gesto faz com a relação entre as pessoas?</p><p><a href="https://iser.org.br/wp-content/uploads/2025/12/Livro_Axe-Amem_ISER.pdf" target="_blank" rel="noreferrer">Raquel Rodrigues, Fé como travessia, p. 215–224, no livro Axé-Amém ↗</a></p></section>`}
           <section id="fontes" class="text-block">
             <h2>Fonte original</h2>
             <p>Esta página preserva o conteúdo importado. O Google Docs continua sendo a referência externa.</p>
@@ -291,7 +294,7 @@
     ];
     return `<div class="wrap">
       ${pageHead("anexo III · edital nº 10", "RioFilme", "Um recorte prático: primeiro, o que precisa ser escrito ou apresentado pelo diretor; depois, apenas a menção às demais frentes da inscrição.")}
-      <figure class="riofilme-brand"><img src="./assets/riofilme-logo.jpg?v=1.12-fb93cb3" alt="Logotipo da RioFilme"><figcaption>Mapa de textos e documentos para a inscrição no edital.</figcaption></figure>
+      <figure class="riofilme-brand"><img src="./assets/riofilme-logo.jpg?v=1.13-axe-amem" alt="Logotipo da RioFilme"><figcaption>Mapa de textos e documentos para a inscrição no edital.</figcaption></figure>
       <div class="editorial-layout">
         <nav class="section-index"><a href="#RF-01">Entrega criativa</a><a href="#RF-02">Documentos pessoais</a><a href="#RF-03">Demais frentes</a></nav>
         <div class="editorial-content">
@@ -322,7 +325,8 @@
       <div class="editorial-layout">
         <aside class="section-index"><a href="#V-01">Versão atual</a><a href="#protocolo">Protocolo</a></aside>
         <div class="editorial-content">
-          <article class="version-line" id="V-01"><time datetime="2026-11-03T11:29:00-03:00">3 nov. 2026 · 11h29</time><div><strong>v1.12 · Dossiê integrado ao site do diretor</strong><ul><li>Títulos reduzidos em 40% e logo da RioFilme incluída.</li><li>Itens criativos do edital ligados aos textos correspondentes.</li><li>Travessia com vídeo em loop, trilha contínua e som original em destaque na segunda parte.</li></ul></div><span class="tag">publicada</span></article>
+          <article class="version-line" id="V-01"><time datetime="2026-11-11T13:03:00-03:00">11 nov. 2026 · 13h03</time><div><strong>v1.13 · AXÉ AMÉM</strong><ul><li>Título e apresentação visual atualizados.</li><li>Marcelo Almeida e Raquel Rodrigues integrados ao roteiro.</li><li>Valores civilizatórios afro-brasileiros de Azoilda Loretto da Trindade incluídos na reflexão.</li></ul></div><span class="tag">publicada</span></article>
+          <article class="version-line"><time datetime="2026-11-03T11:29:00-03:00">3 nov. 2026 · 11h29</time><div><strong>v1.12 · Dossiê integrado ao site do diretor</strong><ul><li>Títulos reduzidos em 40% e logo da RioFilme incluída.</li><li>Itens criativos do edital ligados aos textos correspondentes.</li><li>Travessia com vídeo em loop, trilha contínua e som original em destaque na segunda parte.</li></ul></div><span class="tag">arquivada</span></article>
           <article class="version-line"><time datetime="2026-11-03T11:00:00-03:00">3 nov. 2026 · 11h00</time><div><strong>v1.11 · Travessia</strong><ul><li>Relato autobiográfico organizado em quatro movimentos.</li><li>Fotografias e dois fragmentos do vídeo familiar integrados à página.</li><li>Índice lateral e busca passam a incluir o relato.</li></ul></div><span class="tag">arquivada</span></article>
           <article class="version-line"><time datetime="2026-11-03T10:38:00-03:00">3 nov. 2026 · 10h38</time><div><strong>v1.10 · Caderno de investigação</strong><ul><li>Página Pesquisa passa a se chamar Caderno de investigação.</li><li>Texto atualizado do Google Docs substitui a base anterior.</li><li>Pergunta-motriz, hipótese, contradições, pendências e dados orientam a leitura.</li><li>Busca interna passa a consultar a versão mais recente do documento.</li></ul></div><span class="tag">arquivada</span></article>
           <article class="version-line"><time datetime="2026-11-03T09:09:00-03:00">3 nov. 2026 · 09h09</time><div><strong>v1.9 · Estrutura aprovada e navegação corrigida</strong><ul><li>Arco narrativo e organização da montagem publicados com 6.306 caracteres.</li><li>Terceiro movimento passa a integrar a leitura contínua do roteiro.</li><li>Links internos permanecem na página Roteiro e alcançam a seção indicada.</li><li>Rotas internas funcionam após recarregar e ao navegar pelo histórico.</li></ul></div><span class="tag">arquivada</span></article>
