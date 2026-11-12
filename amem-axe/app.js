@@ -105,7 +105,7 @@
     return `<div class="wrap">
       ${pageHead("textos aprovados", "O filme", "Sinopse, visão do diretor e pontos fortes preparados para a inscrição. O roteiro documental possui uma página própria.")}
       <figure class="symbol-band">
-        <img src="./assets/amem-axe-symbol-wide-transparent.png" alt="Mão sustenta um objeto de ferro que aproxima símbolos do cristianismo e das religiões de matriz africana.">
+        <img src="./assets/amem-axe-symbol-wide.png" alt="Mão sustenta um objeto de ferro que aproxima símbolos do cristianismo e das religiões de matriz africana.">
       </figure>
       <div class="editorial-layout">
         <nav class="section-index" aria-label="Nesta página">
