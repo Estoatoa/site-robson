@@ -73,13 +73,18 @@
         <div class="hero-text">
           <p class="eyebrow">documentário em desenvolvimento</p>
           <h1>AXÉ<br><em>AMÉM</em></h1>
-          <p class="hero-copy">Um cineasta negro investiga como pessoas negras evangélicas e de terreiro passaram a se enxergar como inimigas — e o que seus encontros revelam sobre fé, memória e sobrevivência.</p>
+          <p class="hero-copy">A quem interessa que nos detestemos? No Rio, pessoas negras evangélicas e de terreiro se encontram e confrontam o racismo religioso. O que esse encontro pode mudar?</p>
           <div class="status-strip"><span class="tag work">em desenvolvimento</span><span class="tag source">Rio de Janeiro</span><span class="tag ready">70 min · documentário</span></div>
         </div>
         <figure class="hero-art">
           <img src="./assets/amem-axe-symbol-portrait.jpeg?v=1.13-axe-amem" alt="Braço negro ergue um objeto de ferro que une símbolos do cristianismo e das religiões de matriz africana.">
           <figcaption>Uma imagem para a encruzilhada entre Amém e Axé.</figcaption>
         </figure>
+      </section>
+      <section class="text-block" id="origem-pesquisa">
+        <p class="eyebrow">origem da pesquisa</p><h2>O encontro entre o Axé e o Amém</h2>
+        <p>A pesquisa do filme parte do livro e da formação Axé-Amém, do Instituto de Estudos da Religião (ISER), que reúne pessoas negras evangélicas e de terreiro para discutir racismo religioso e construir possibilidades de cooperação. O documentário acompanha esse encontro e seus desdobramentos nas comunidades.</p><p>A pergunta de abertura, “A quem interessa que nos detestemos?”, é uma formulação do filme inspirada na reflexão da pesquisadora Dra. Carolina Rocha sobre a desunião de um povo. Sua contribuição integra a pesquisa e o diálogo com os personagens.</p>
+        <p><a href="https://iser.org.br/noticia/inscricoes-abertas-para-a-formacao-axe-amem-2026/" target="_blank" rel="noopener">Conhecer a formação no ISER</a> · <a href="https://radiomec.ebc.com.br/programas/conversa-com-o-autor/o-conversa-com-o-autor-recebe-a-escritora-carolina-rocha" target="_blank" rel="noopener">Reflexão de Carolina Rocha</a></p>
       </section>
       <section class="lede-grid">
         <div><p class="eyebrow">o que há aqui</p><h2>Do filme ao edital, em uma leitura direta.</h2></div>
@@ -112,7 +117,7 @@
           <a href="#DIR-04">Sinopse</a><a href="#DIR-05">Visão estética</a><a href="#DIR-06">Pontos fortes</a>
         </nav>
         <div class="editorial-content">
-          ${block({id:"DIR-04",label:"DIR-04",title:"Sinopse",body:sinopse,status:"aprovada · 699 caracteres"})}
+          ${block({id:"DIR-04",label:"DIR-04",title:"Sinopse",body:sinopse,status:"revisada · 807 caracteres"})}
           ${block({id:"DIR-05",label:"DIR-05",title:"Visão e abordagem estética",body:visao,status:"aprovada · 2.476 caracteres"})}
           ${block({id:"DIR-06",label:"DIR-06",title:"Pontos fortes da proposta",body:pontos,status:"aprovados · 2.157 caracteres"})}
         </div>
@@ -327,7 +332,7 @@
         <div class="editorial-content">
           <article class="version-line" id="V-01"><time datetime="2026-11-11T13:03:00-03:00">11 nov. 2026 · 13h03</time><div><strong>v1.13 · AXÉ AMÉM</strong><ul><li>Título e apresentação visual atualizados.</li><li>Marcelo Almeida e Raquel Rodrigues integrados ao roteiro.</li><li>Valores civilizatórios afro-brasileiros de Azoilda Loretto da Trindade incluídos na reflexão.</li></ul></div><span class="tag">publicada</span></article>
           <article class="version-line"><time datetime="2026-11-03T11:29:00-03:00">3 nov. 2026 · 11h29</time><div><strong>v1.12 · Dossiê integrado ao site do diretor</strong><ul><li>Títulos reduzidos em 40% e logo da RioFilme incluída.</li><li>Itens criativos do edital ligados aos textos correspondentes.</li><li>Travessia com vídeo em loop, trilha contínua e som original em destaque na segunda parte.</li></ul></div><span class="tag">arquivada</span></article>
-          <article class="version-line"><time datetime="2026-11-03T11:00:00-03:00">3 nov. 2026 · 11h00</time><div><strong>v1.11 · Travessia</strong><ul><li>Relato autobiográfico organizado em quatro movimentos.</li><li>Fotografias e dois fragmentos do vídeo familiar integrados à página.</li><li>Índice lateral e busca passam a incluir o relato.</li></ul></div><span class="tag">arquivada</span></article>
+          <article class="version-line"><time datetime="2026-11-03T11:00:00-03:00">3 nov. 2026 · 11h00</time><div><strong>v1.14 · Travessia</strong><ul><li>Relato autobiográfico organizado em quatro movimentos.</li><li>Fotografias e dois fragmentos do vídeo familiar integrados à página.</li><li>Índice lateral e busca passam a incluir o relato.</li></ul></div><span class="tag">arquivada</span></article>
           <article class="version-line"><time datetime="2026-11-03T10:38:00-03:00">3 nov. 2026 · 10h38</time><div><strong>v1.10 · Caderno de investigação</strong><ul><li>Página Pesquisa passa a se chamar Caderno de investigação.</li><li>Texto atualizado do Google Docs substitui a base anterior.</li><li>Pergunta-motriz, hipótese, contradições, pendências e dados orientam a leitura.</li><li>Busca interna passa a consultar a versão mais recente do documento.</li></ul></div><span class="tag">arquivada</span></article>
           <article class="version-line"><time datetime="2026-11-03T09:09:00-03:00">3 nov. 2026 · 09h09</time><div><strong>v1.9 · Estrutura aprovada e navegação corrigida</strong><ul><li>Arco narrativo e organização da montagem publicados com 6.306 caracteres.</li><li>Terceiro movimento passa a integrar a leitura contínua do roteiro.</li><li>Links internos permanecem na página Roteiro e alcançam a seção indicada.</li><li>Rotas internas funcionam após recarregar e ao navegar pelo histórico.</li></ul></div><span class="tag">arquivada</span></article>
           <article class="version-line"><time datetime="2026-11-03T09:03:00-03:00">3 nov. 2026 · 09h03</time><div><strong>v1.8 · Leitura contínua do roteiro</strong><ul><li>Personagens e estratégias passam a formar um texto contínuo.</li><li>Títulos internos permanecem visíveis como marcos de leitura.</li><li>Subseções expansíveis são substituídas por fluxo editorial aberto.</li><li>Índice lateral organiza os três movimentos do roteiro.</li></ul></div><span class="tag">arquivada</span></article>
