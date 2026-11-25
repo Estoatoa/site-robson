@@ -11,9 +11,10 @@ page = page.replace('<div id="downloads"></div>', '<p><a href="research/observat
 
 # The portfolio serves this directory directly through GitHub Pages.
 import re
+site_page = page.replace('href="../"', 'href="../"')
 site_page = re.sub(
-    r'(href|src)="(?!#|https?:|/)([^"]+)"',
+    r'(href|src)="(?!#|https?:|/|\.\./)([^"]+)"',
     r'\1="public/\2"',
-    page,
+    site_page,
 )
 (root / "index.html").write_text(site_page)
